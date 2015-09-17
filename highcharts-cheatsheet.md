@@ -1,3 +1,4 @@
+# Highcharts Cheatsheet
 
 [Highcharts](http://www.highcharts.com/) is a complete charting library to create animated and dynamic charts with JavaScript. It works in all modern mobile and desktop browsers including the iPhone/iPad and Internet Explorer from version 6.
 
@@ -775,7 +776,6 @@ chart.series[i].setData (Array<Mixed> data, [Boolean redraw], [Mixed animation],
 chart.series[i].setVisible (Boolean visible, [Boolean redraw]){ };  // A utility function to show or hide the series with an optional redraw.
 chart.series[i].show (){ };  // Shows the series if hidden.
 chart.series[i].update (Object options, [Boolean redraw]){ };  // Update the series with a new set of options. For a clean and precise handling of new options, all methods and elements from the series is removed, and it is initiated from scratch. Therefore, this method is more performance expensive than some other utility methods like setData or setVisible.
-```
 ```
 
 
