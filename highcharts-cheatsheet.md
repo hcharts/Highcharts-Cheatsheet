@@ -8,25 +8,28 @@ You can find below most of the available options so as to quickly browse every p
 
 Note: [Read the official HighCharts API documentation.](Read the official HighCharts API documentation)
 
-## 1. INSTALLATION.
+## 1. 安装
 
-Highcharts requires two files to run, highcharts.js and either jQuery, MooTools or Prototype or the Highcharts Standalone Framework which are used for some common JavaScript tasks.
+Highcharts 的运行需要两个 JS 文件， highcharts.js 及 jQuery 、 MooTools 、Prototype 、Highcharts Standalone Framework 常用 JS 框架中的一个。
 
 ```
-<!-- http://www.highcharts.com/docs/getting-started/installation -->
+<!-- http://www.hcharts.cn/docs/index.php?doc=start-configure -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="http://cdn.hcharts.cn/jquery/jquery.1.8.3.min.js"></script>
+<script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+
 ```
 
-## 2. HIGHCHARTS GLOBAL OPTIONS.
+更多详细见[中文教程](http://www.hcharts.cn/docs/index.php?doc=start-configure)。
+
+## 2. HIGHCHARTS 全局配置
 
 ```
 // http://api.highcharts.com/highcharts#global
 
 $(function() {
-  // If you want to apply a set of options to all charts on the same page, use Highcharts.setOptions
-  // You can find below only specific information to setOptions() but any option from $("#container").highcharts() works. (check 3.)
+  // Highcharts.setOptions 里的配置对同一个页面的所有图表有效，也就是说对于多个图表公共的配置代码，完全可以放在 Highcharts.setOptions 里
+  // 并且 $("#container").highcharts() 里的所有配置项对于 Highcharts.setOptions 都是可用的。
   Highcharts.setOptions({
     global: {
       VMLRadialGradientURL: 'http://code.highcharts.com/{version}/gfx/vml-radial-gradient.png',  // Path to the pattern image required by VML browsers in order to draw radial gradients.
@@ -56,7 +59,7 @@ $(function() {
 });
 ```
 
-## 3. CREATE YOUR CHART.
+## 3. 创建图表
 
 ```
 <div id="container" style="width:100%; height:400px;"></div>
@@ -650,7 +653,7 @@ $(function () {
 });
 ```
 
-## 4. METHODS AND PROPERTIES.
+## 4. 方法和参数
 
 ```
 // http://api.highcharts.com/highcharts
@@ -658,7 +661,7 @@ $(function () {
 var chart = new Highcharts.Chart(options);  // This is the constructor for creating a new chart object.
 ```
 
-### 4.1. CHART.
+### 4.1. 图表对象
 
 ```
 // http://api.highcharts.com/highcharts#Chart
@@ -688,7 +691,7 @@ chart.setTitle(Object title, object subtitle, Boolean redraw){ };  // Set a new 
 chart.showLoading(String str){ };
 ```
 
-### 4.2. AXIS.
+### 4.2. 坐标轴对象
 
 ```
 // http://api.highcharts.com/highcharts#Axis
@@ -707,7 +710,7 @@ chart.xAxis.toValue(Number pixel, [Boolean paneCoordinates]){ };                
 chart.xAxis.update(Object options, [Boolean redraw]){ };
 ```
 
-### 4.3. ELEMENT.
+### 4.3. SVG 原生对象
 
 ```
 // http://api.highcharts.com/highcharts#Element
@@ -722,7 +725,7 @@ chart.renderer.on(String eventType, Function handler){ };          // Apply an e
 chart.renderer.toFront(){ };                                       // Bring the element to the front. Alternatively, a zIndex attribute can be given.
 ```
 
-### 4.4. HIGHCHARTS.
+### 4.4. Highcharts 对象
 
 ```
 // http://api.highcharts.com/highcharts#Highcharts
@@ -735,7 +738,7 @@ Highcharts.numberFormat(Number number, [Number decimals], [String decimalPoint],
 Highcharts.setOptions(Object options){ };  // Sets the options globally for all charts created after this has been called. Takes an options JavaScript object structure as the argument. These options are merged with the default options and the result is returned.
 ```
 
-### 4.5. POINT.
+### 4.5. 图表点对象（POINT）
 
 ```
 // http://api.highcharts.com/highcharts#Point
@@ -753,7 +756,7 @@ chart.series[i].data[j].slice([Boolean sliced], [Boolean redraw], [Mixed animati
 chart.series[i].data[j].update([Mixed options], [Boolean redraw], [Mixed animation]){ };  // Update the point with new values.
 ```
 
-### 4.7. SERIES.
+### 4.7. 图表数据列对象（SERIES）
 
 ```
 // http://api.highcharts.com/highcharts#Series
@@ -777,6 +780,4 @@ chart.series[i].setVisible (Boolean visible, [Boolean redraw]){ };  // A utility
 chart.series[i].show (){ };  // Shows the series if hidden.
 chart.series[i].update (Object options, [Boolean redraw]){ };  // Update the series with a new set of options. For a clean and precise handling of new options, all methods and elements from the series is removed, and it is initiated from scratch. Therefore, this method is more performance expensive than some other utility methods like setData or setVisible.
 ```
-
-
 
