@@ -28,16 +28,18 @@ Highcharts 的运行需要两个 JS 文件， highcharts.js 及 jQuery 、 MooTo
 // http://api.highcharts.com/highcharts#global
 
 $(function() {
+
   // Highcharts.setOptions 里的配置对同一个页面的所有图表有效，也就是说对于多个图表公共的配置代码，完全可以放在 Highcharts.setOptions 里
   // 并且 $("#container").highcharts() 里的所有配置项对于 Highcharts.setOptions 都是可用的。
+
   Highcharts.setOptions({
-    global: {
+    global: {                                    // 全局配置变量
       VMLRadialGradientURL: 'http://code.highcharts.com/{version}/gfx/vml-radial-gradient.png',  // Path to the pattern image required by VML browsers in order to draw radial gradients.
       canvasToolsURL: 'http://code.highcharts.com/{version}/modules/canvas-tools.js',            // The URL to the additional file to lazy load for Android 2.x devices. These devices don't support SVG, so we download a helper file that contains canvg, its dependecy rbcolor, and our own CanVG Renderer class.
-      timezoneOffset: 0,  // The timezone offset in minutes
+      timezoneOffset: 0,  // 时区间隔，单位为 分钟。中国为 +8 区，如果图表中展示的时间和实际时间相差 8个小时，设置本参数为 -8 * 60 来调整
       useUTC: true        // Whether to use UTC time for axis scaling, tickmark placement and time display in Highcharts.dateFormat.
     },
-    lang: {
+    lang: {                                      // 图表中语言文字对象
       contextButtonTitle: 'Chart context menu',  // Exporting module menu. The tooltip title for the context menu holding print and export menu items.
       decimalPoint: '.',                         // The default decimal point used in the Highcharts.numberFormat method unless otherwise specified in the function arguments.
       downloadJPEG: 'Download JPEG image',       // Exporting module only. The text for the JPEG download menu item.
@@ -62,7 +64,8 @@ $(function() {
 ## 3. 创建图表
 
 ```
-<div id="container" style="width:100%; height:400px;"></div>
+<!-- 图表容器 -->
+<div id="container" style="min-width:100%; height:400px;"></div>
 ```
 
 ```
