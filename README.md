@@ -69,62 +69,62 @@
 	<tr>
 		<td>colors</td>
 		<td>options/colors.md</td>
-		<td></td>
+		<td>cxytomo</td>
 	</tr>
 
 	<tr>
 		<td>credits</td>
 		<td>options/credits.md</td>
-		<td></td>
+		<td>cxytomo</td>
 	</tr>
 
 	<tr>
 		<td>drilldown</td>
 		<td>options/drilldown.md</td>
-		<td></td>
+		<td>cxytomo</td>
 	</tr>
 
 	<tr>
 		<td>exporting</td>
 		<td>options/exporting.md</td>
-		<td></td>
+		<td>cxytomo</td>
 	</tr>
 
 	<tr>
 		<td>labels</td>
 		<td>options/labels.md</td>
-		<td></td>
+		<td>zhuzisheng</td>
 	</tr>
 
 	<tr>
 		<td>legend</td>
 		<td>options/legend.md</td>
-		<td></td>
+		<td>zhuzisheng</td>
 	</tr>
 
 	<tr>
 		<td>loading</td>
 		<td>options/loading.md</td>
-		<td></td>
+		<td>zhuzisheng</td>
 	</tr>
 
 
 	<tr>
 		<td>navigation</td>
 		<td>options/navigation.md</td>
-		<td></td>
+		<td>zhuzisheng</td>
 	</tr>
 
 	<tr>
 		<td>noData</td>
 		<td>options/nodata.md</td>
-		<td></td>
+		<td>webkong</td>
 	</tr>
 
 	<tr>
 		<td>pane</td>
 		<td>options/pane.md</td>
-		<td></td>
+		<td>webkong</td>
 	</tr>
 
 	<tr>
@@ -136,13 +136,13 @@
 	<tr>
 		<td>series</td>
 		<td>options/series.md</td>
-		<td></td>
+		<td>webkong</td>
 	</tr>
 
 	<tr>
 		<td>title & subtitle</td>
 		<td>options/title.md</td>
-		<td></td>
+		<td>webkong</td>
 	</tr>
 
 	<tr>
@@ -205,3 +205,20 @@
 请参考  [http://www.hcharts.cn/api/index.php](http://www.hcharts.cn/api/index.php)  及 [highcharts-cheatsheet.md](highcharts-cheatsheet.md) ，在对应文件里写内容。
 
 注意每个人只能修改自己负责的文件，不然会导致冲突，如果需要补充修改别人的内容，请提交 pull request.
+
+###  创建 git 分支
+
+建议每个人在自己的分支上操作，操作过程是：
+
+```
+git checkout -b "your branch name"
+// 编辑
+git add -A
+git commit -m "commit message"
+git checkout master
+git merge "your branch name"
+git status
+git push origin master
+```
+
+git 教程请参考：http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
