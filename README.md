@@ -202,6 +202,6 @@
 
 ## 相关说明
 
-请参考  及 highcharts-cheatsheet.md ，在对应文件里写内容。
+请参考  [http://www.hcharts.cn/api/index.php](http://www.hcharts.cn/api/index.php)  及 [highcharts-cheatsheet.md](highcharts-cheatsheet.md) ，在对应文件里写内容。
 
 注意每个人只能修改自己负责的文件，不然会导致冲突，如果需要补充修改别人的内容，请提交 pull request.
