@@ -63,7 +63,7 @@
 		<td rowspan=16>HIGHCHARTS 主配置</td>
 		<td>chart</td>
 		<td>options/chart.md</td>
-		<td></td>
+		<td>ssbunny</td>
 	</tr>
 
 	<tr>
@@ -148,13 +148,13 @@
 	<tr>
 		<td>tooltip</td>
 		<td>options/tooltip.md</td>
-		<td></td>
+		<td>ssbunny</td>
 	</tr>
 
 	<tr>
 		<td>xAxis & yAxis</td>
 		<td>options/axis.md</td>
-		<td></td>
+		<td>ssbunny</td>
 	</tr>
 
 	<tr>
