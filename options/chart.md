@@ -76,6 +76,5 @@ chart: {
   type: 'line',                                // 图表默认的数据列类型，可以是 plotOptions 列表中的任一类型。
   width: null,                                 // 明确指定图表宽度。默认情况下，图表宽度通过容器元素宽度的 offset 值计算而来。
   zoomType: null,                              // 用户拖动鼠标时，在哪个维度放大。可选的值为 x、y 或 xy 。
-
-    }
+}
 ````
