@@ -2,7 +2,7 @@
 
 ###图表输出功能模块，这里输出包括导出(export)和打印(print)。
 
-```
+```js
 exporting: {
       buttons: {                  //导出或者打印相关按钮的设置。
         contextButton: {          //输出按钮选项

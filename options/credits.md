@@ -2,7 +2,7 @@
 
 ###图表版权信息
 
-```
+```js
 credits: {
       enabled: true,                      // 是否显示版权信息。通过设置为false即可禁用版权信息。默认是：true。
       href: 'http://www.highcharts.com',  // 版权信息链接地址。默认是：http://www.highcharts.com。

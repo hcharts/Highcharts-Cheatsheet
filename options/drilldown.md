@@ -2,7 +2,7 @@
 
 ###下钻图表选项
 
-```
+```js
 drilldown: {
       activeAxisLabelStyle: null,  // 为可下钻点对应的x轴标签添加额外样式。默认效果是添加下划线，并显示蓝色文字。默认是：null。
       activeDataLabelStyle: null,  // 为可下钻点对应的数据标签添加额外样式。默认效果是添加下划线，并显示蓝色文字。默认是：null。
